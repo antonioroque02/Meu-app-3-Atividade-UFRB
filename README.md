@@ -1,16 +1,64 @@
-# React + Vite
+# Blog Computação de Antonio Roque
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto final de disciplina: um gerenciador de conteúdo em React com navegação, busca, integração de APIs em português e tema claro/escuro.
 
-Currently, two official plugins are available:
+## Funcionalidades principais
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Página inicial com listagem de artigos em português
+- Página individual de post com comentários locais via localStorage
+- Página de categoria que filtra resultados automaticamente
+- Página sobre com descrição do blog e contexto da computação no Brasil
+- Página 404 para rotas inexistentes
+- Busca por palavra-chave em conteúdos em português
+- Integração com fontes brasileiras:
+  - RSS de portais: G1, Agência Brasil, Tecnoblog
+  - Dados públicos do governo via dados.gov.br
+- Modo claro/escuro com tema persistente
+- Estilização responsiva e componentes reutilizáveis
 
-## React Compiler
+## Páginas do projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- / — Início / listagem de artigos
+- /post/:id — Post individual
+- /category/:name — Categoria filtrada
+- /about — Sobre
+- * — 404
 
-## Expanding the ESLint configuration
+## Como usar localmente
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+`ash
+npm install
+npm run dev
+`
+
+Abra o navegador em:
+
+`ash
+http://localhost:5173/
+`
+
+## Publicação no GitHub Pages
+
+Este projeto foi configurado para GitHub Pages com base em:
+
+`	ext
+https://antonioroque02.github.io/Meu-app-3-Atividade-UFRB/
+`
+
+Para publicar:
+
+`ash
+npm run deploy
+`
+
+## Estrutura de pastas importantes
+
+- src/components/ — componentes React reutilizáveis
+- src/contexts/ThemeContext.jsx — contexto de tema claro/escuro
+- src/App.jsx — roteamento principal
+- src/index.css — estilos globais
+- ite.config.js — configuração de base para GitHub Pages
+
+## Sobre o autor
+
+Blog Computação de Antonio Roque — trabalho para disciplina de Desenvolvimento de Software I.
