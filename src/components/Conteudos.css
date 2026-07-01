@@ -1,0 +1,26 @@
+.personagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+  margin: 1rem
+}
+
+.personagem {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.personagem img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.personagem p {
+  margin-top: 8px;
+  font-weight: 600;
+}

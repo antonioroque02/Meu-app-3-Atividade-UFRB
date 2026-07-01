@@ -1,0 +1,7 @@
+.pagination-wrap{ display:flex; gap:12px; justify-content:center; align-items:center; margin-top:16px }
+.pagination-btn{ background:var(--accent-bg); border:1px solid var(--accent-border); padding:8px 12px; border-radius:8px }
+.pagination-btn:disabled{ opacity:0.45; cursor:not-allowed }
+.pagination-info{ font-weight:600 }
+
+.pagination-btn{ transition: transform 160ms ease, box-shadow 160ms ease }
+.pagination-btn:hover:not(:disabled){ transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.08) }

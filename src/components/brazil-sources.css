@@ -1,0 +1,10 @@
+.brazil-sources{ margin-top:20px; padding:12px; border-top:1px solid var(--border) }
+.feeds-grid{ display:flex; gap:16px; flex-wrap:wrap }
+.feed-column{ flex:1 1 240px }
+.feed-block{ margin-bottom:12px }
+.feed-block ul{ list-style:none; padding:0; margin:6px 0 }
+.feed-block li{ margin-bottom:6px }
+.feed-block a{ color:var(--accent); text-decoration:none }
+.feed-block a:hover{ text-decoration:underline }
+
+@media(max-width:700px){ .feeds-grid{ flex-direction:column } }
